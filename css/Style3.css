@@ -87,7 +87,7 @@ background:white;
 .Major-Box{
     margin: auto;
 max-width: 1000px;
-height:1400px;
+height:fit-content;
 position: relative;
 
 font: bold 18px Lobster, verdana, sans-serif;
