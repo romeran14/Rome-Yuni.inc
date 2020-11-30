@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body {
+    font: bold 18px IndieFlower, verdana, sans-serif;
+   color: rgb(91, 10, 53);
+    line-height:  1.7em;
+background: url('../img/fondo.jpg') no-repeat center center fixed;
+background-size: cover;
+}
+@font-face {
+    font-family: 'IndieFlower';
+    src: url('../css/fonts/IndieFlower-Regular.ttf');
+   }
+.clr{
+    clear: both;
+}
+.text-primary{
+    color:white;
+}
+a{
+    text-decoration: none;
+    color:  rgb(91, 10, 53);
+}
+.container{
+    margin: auto;
+    padding: 0 20px;
+    overflow: hidden;
+    max-width: 900px;
+    height: 70px;
+
+}
+#logo{
+    height: 70px;
+    margin: 0;
+}
+#navbar{
+background:white;
+    overflow: auto;
+    max-width: 900px;
+    margin: auto;
+   border-radius: 10px;
+    border: 10px solid transparent;
+    -moz-border-image: url("../img/Borde.png")  round;
+    -webkit-border-image: url("../img/Borde.png")29 29 round;
+    border-image: url("../img/Borde.png") 90 10 round;
+    border-top: none;
+    box-shadow: rgb(150,150,150) 0px 0px 5px 1px; 
+}
+
+#navbar ul {
+    float: right;
+    list-style: none;
+    margin: auto;
+
+}
+#navbar ul li{
+    float: left;
+    text-align: center;
+
+}
+#navbar ul li a{
+    display: block;
+    text-align: center;
+    padding: 20px;
+    
+}
+#navbar ul li a:hover,
+#navbar ul li a.current {
+    background: #f4f4f4cb;
+    color: rgb(255, 211, 62);
+}
+
+#main-footer{
+    text-align: center;
+    padding: 16px;
+    background:  rgb(255, 211, 62);
+    color: #f4f4f4;
+    font-size: 13px;
+    position: fixed;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+}
+.Major-Box{
+    margin: auto;
+max-width: 1000px;
+height:fit-content;
+position: relative;
+
+
+}
+
+
+.etiqueta{
+    padding: 3px 10px;
+    text-align: center;
+    background:  rgb(255, 211, 62);
+    font-size: 13px;
+width: fit-content;
+height: fit-content;
+border-radius: 5px;
+margin: center;
+
+}
+#paper{
+    text-align: justify;
+    color: white;
+    background: rgba(0, 0, 0, 0.90);
+    width: 850px;
+    margin: auto;
+    height: fit-content;
+    font: bold 13px relato, sans-serif;
+    padding: 35px 30px;
+    font-size: 13px;
+}
+@font-face {
+    font-family: 'relato';
+    src: url('../css/fonts/SawarabiMincho-Regular.ttf');
+   }
+#paper h4{
+    text-align: center;
+    font-size: 17px;
+}
+#dudas{
+    color: aqua;
+}
