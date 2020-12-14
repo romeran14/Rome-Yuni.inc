@@ -7,6 +7,9 @@ html,body {
     font: bold 18px IndieFlower, verdana, sans-serif;
    color: rgb(91, 10, 53);
     line-height:  1.7em;
+/*background: url('../img/fondo.jpg') no-repeat center center fixed;
+background-size: cover;*/
+/*background: url('../img/fondo.jpg') no-repeat center center/cover;*/
 background: url('../img/fondo.jpg') no-repeat center center fixed;
 background-size: cover;
 }
@@ -25,21 +28,26 @@ a{
     color:  rgb(91, 10, 53);
 }
 .container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     margin: auto;
-    padding: 0 20px;
+
     overflow: hidden;
-    max-width: 900px;
-    height: 70px;
+    max-width: 90vw;
+    height: fit-content;
 
 }
 #logo{
-    height: 70px;
-    margin: 0;
+    height: 3.5rem;
+
 }
 #navbar{
 background:white;
-    overflow: auto;
-    max-width: 900px;
+
+
+
+    max-width: 90vw;
     margin: auto;
    border-radius: 10px;
     border: 10px solid transparent;
@@ -51,21 +59,22 @@ background:white;
 }
 
 #navbar ul {
-    float: right;
+  /*  float: right;
     list-style: none;
-    margin: auto;
-
+    margin: auto;*/
+    display: flex;
+    align-items: center;
+    list-style: none;
 }
 #navbar ul li{
     float: left;
     text-align: center;
-
+    line-height: 0.8rem;
 }
 #navbar ul li a{
-    display: block;
-    text-align: center;
-    padding: 20px;
-    
+    padding: 0.75rem;
+    margin: 0 0.25rem;
+
 }
 #navbar ul li a:hover,
 #navbar ul li a.current {
@@ -78,7 +87,7 @@ background:white;
     padding: 16px;
     background: rgb(255, 129, 159);
     color: #f4f4f4;
-    font-size: 13px;
+    font-size: 0.8rem;
     position: fixed;
     left: 0px;
     bottom: 0px;
@@ -86,11 +95,13 @@ background:white;
 }
 .Major-Box{
     margin: auto;
-max-width: 1000px;
-height:fit-content;
+max-width: 90vw;
 position: relative;
-
-font: bold 18px Lobster, verdana, sans-serif;
+height: fit-content;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
 }
 @font-face {
     font-family: 'Lobster';
@@ -141,22 +152,22 @@ border-radius: 5px;
     text-align: justify;
 }
 .mediocajon{
-    width: 46%;
+    width: 80%;
     height: fit-content;
-
+    margin: auto;
 display: inline-block;
-    overflow: auto;
+    overflow: visible;
 
 }
 
 #cajon3{
-    margin-left: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
     position: relative;
+    width: 80vw;
 }
-#cajon4{
-    margin-left: 0px;
-    position: relative;
-}
+
 .izqd2{
     position: absolute;
     top: 5px;
@@ -170,11 +181,12 @@ display: inline-block;
 #medcajita3{
     background:  rgb(204, 141, 62);
     text-align: justify;
-
+    margin: 0.5rem;
 }
 #medcajita4{
     background:  rgb(196, 183, 255);
     text-align: justify;
+    margin: 0.5rem;
 }
 #caja5{
 
@@ -187,9 +199,10 @@ display: inline-block;
     background: white;
     margin: 10px auto;
     width: 94%;
-    height: 150px;
+    height: fit-content;
     opacity: 0.9;
     font: bold 18px Raleway, verdana, sans-serif;
+    padding: 0.5rem;
 }
 @font-face {
     font-family: 'Raleway';
@@ -215,7 +228,8 @@ margin-bottom: 10px;
 
 }
 .testimonial p{
-    font-size: 15px;
+    font-size: 1rem;
+    margin-bottom: 1rem;
 }
 #medcajita3, #medcajita4{
     line-height: 1.4em;
@@ -224,3 +238,11 @@ margin-bottom: 10px;
 }
 #medcajita3 ul, #medcajita4 ul{
     list-style: none;}
+    .testimonial h3{
+
+        margin-bottom: 1.2rem;
+    }
+    #gato{
+        height: max-content;
+        display: flex;
+    }

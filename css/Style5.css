@@ -7,6 +7,9 @@ html,body {
     font: bold 18px IndieFlower, verdana, sans-serif;
    color: rgb(91, 10, 53);
     line-height:  1.7em;
+/*background: url('../img/fondo.jpg') no-repeat center center fixed;
+background-size: cover;*/
+/*background: url('../img/fondo.jpg') no-repeat center center/cover;*/
 background: url('../img/fondo2.jpg') no-repeat center center fixed;
 background-size: cover;
 }
@@ -25,21 +28,24 @@ a{
     color:  rgb(91, 10, 53);
 }
 .container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     margin: auto;
-    padding: 0 20px;
+
     overflow: hidden;
-    max-width: 900px;
-    height: 70px;
+    max-width: 90vw;
+    height: fit-content;
 
 }
 #logo{
-    height: 70px;
-    margin: 0;
+    height: 3.5rem;
+
 }
 #navbar{
 background:white;
-    overflow: auto;
-    max-width: 900px;
+
+    max-width: 90vw;
     margin: auto;
    border-radius: 10px;
     border: 10px solid transparent;
@@ -51,34 +57,35 @@ background:white;
 }
 
 #navbar ul {
-    float: right;
+  /*  float: right;
     list-style: none;
-    margin: auto;
-
+    margin: auto;*/
+    display: flex;
+    align-items: center;
+    list-style: none;
 }
 #navbar ul li{
     float: left;
     text-align: center;
-
+    line-height: 0.8rem;
 }
 #navbar ul li a{
-    display: block;
-    text-align: center;
-    padding: 20px;
-    
+    padding: 0.75rem;
+    margin: 0 0.25rem;
+
 }
 #navbar ul li a:hover,
 #navbar ul li a.current {
     background: #f4f4f4cb;
-    color: rgb(193, 186, 255);
+    color:  rgb(193, 186, 255);
 }
 
 #main-footer{
     text-align: center;
     padding: 16px;
-    background:  rgb(193, 186, 255);
+    background: rgb(193, 186, 255);
     color: #f4f4f4;
-    font-size: 13px;
+    font-size: 0.8rem;
     position: fixed;
     left: 0px;
     bottom: 0px;
@@ -86,11 +93,12 @@ background:white;
 }
 .Major-Box{
     margin: auto;
-max-width: 1000px;
-height:fit-content;
+max-width: 90vw;
 position: relative;
-
-
+height: fit-content;
+display: flex;
+flex-direction: column;
+justify-items: auto;
 }
 
 
@@ -99,8 +107,8 @@ position: relative;
     padding: 3px 10px;
     text-align: center;
     background:  rgb(193, 186, 255);
-    font-size: 13px;
-width: fit-content;
+    font-size: 1rem;
+width: 85vw;
 height: fit-content;
 border-radius: 5px;
 margin: auto;
@@ -109,5 +117,5 @@ padding: 20px 15px;
 .Major-Box img{
     display: block;
     margin: auto;
-    width: 800px;
+    width: 85vw;
 }

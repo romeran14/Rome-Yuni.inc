@@ -1,0 +1,163 @@
+
+
+
+
+
+@media(max-width: 500px){
+    .container{
+
+
+        flex-direction: column;
+
+        flex-basis: 100%;
+        height: 19vh;
+
+        font-size: 0.7rem;
+        margin-top: top 2rem;
+        
+        
+    }
+    
+    #navbar{
+
+        height: 21vh;
+        margin: auto;
+        margin-top: top 2rem;
+        margin-left: 1.5rem;
+    }
+  .box{      display: block;}
+#logo{
+    align-self: center;
+    width: 40%;
+    margin: 0;
+    height: 60%;
+    margin-top: 1rem;
+}
+#navbar ul li a{
+    padding: 0.40rem 0.6rem;
+    margin: 0 0.2rem;
+
+}
+#main-footer{
+    text-align: center;
+    padding: 0.5rem;
+
+    color: #f4f4f4;
+    font-size: 0.5rem;
+    position: fixed;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+    line-height: 1.5rem;
+}
+#navbar ul li{
+    margin-bottom: 0.5rem;
+
+}
+#navbar ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.Major-Box{
+    display: flex;
+    flex-direction: column;
+}
+#box-1{
+    width: 100vw;
+    height: 35rem;
+
+}
+#Michi{
+    width: 55%;
+    height: 65%;
+    margin: auto;
+    margin-top: 3rem;
+}
+#paper{
+    width: 85vw;
+    font-size: 1rem;
+}
+.Major-Box #paper h4{
+    font-size: 1.6rem
+}
+#penita{
+    display: block;
+    width: 90vw;
+    margin: auto;
+}
+#dudasxd{
+    font-size: 2.5rem;
+    color:black;
+    padding: 1rem;
+}
+#cajon3{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    position: relative;
+
+}
+.testimonial p{
+    display: block;
+    font-size: 0.8rem;
+    padding: 1rem;
+}
+.fondoblanco{
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.fondoblanco .testimonial img{
+    width: 100px;
+    float: center;
+    margin-right: 20px;
+    border-radius: 50%;
+    margin-left: 20px;
+    margin-top: -15px;
+}
+.caja{
+    width: 80vw;
+}
+.der2{
+    position: absolute;
+    top: 51%;
+    right:12%;
+}
+.Major-Box .mediocajon{
+    width: 100vw;
+}
+.Major-Box .mediocajon .screen{
+    width: 85vw;
+margin-left: 5%;
+}
+#medcajita45{
+    width: 100vw;
+    padding: 0;
+}
+#medcajita4{
+    width: 80vw;
+    padding: 1rem;
+}
+.vertical{
+    width: 23.5%;
+}
+.horizontal{
+    width: 40%;
+}
+#medcajita5{
+    width: 100vw;
+    padding: 0%;
+}
+.vertical2{
+    width: 29.5%;
+}
+.horizontal2{
+    width: 51%;
+}
+.etiqueta-yuni{
+    font-size: 0.7rem;
+    padding: 15px 10px;
+}
+}

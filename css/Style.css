@@ -7,6 +7,9 @@ html,body {
     font: bold 18px IndieFlower, verdana, sans-serif;
    color: rgb(91, 10, 53);
     line-height:  1.7em;
+/*background: url('../img/fondo.jpg') no-repeat center center fixed;
+background-size: cover;*/
+/*background: url('../img/fondo.jpg') no-repeat center center/cover;*/
 background: url('../img/fondo.jpg') no-repeat center center fixed;
 background-size: cover;
 }
@@ -25,21 +28,26 @@ a{
     color:  rgb(91, 10, 53);
 }
 .container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     margin: auto;
-    padding: 0 20px;
+
     overflow: hidden;
-    max-width: 900px;
-    height: 70px;
+    max-width: 90vw;
+    height: fit-content;
 
 }
 #logo{
-    height: 70px;
-    margin: 0;
+    height: 3.5rem;
+
 }
 #navbar{
 background:white;
-    overflow: auto;
-    max-width: 900px;
+
+
+
+    max-width: 90vw;
     margin: auto;
    border-radius: 10px;
     border: 10px solid transparent;
@@ -51,21 +59,22 @@ background:white;
 }
 
 #navbar ul {
-    float: right;
+  /*  float: right;
     list-style: none;
-    margin: auto;
-
+    margin: auto;*/
+    display: flex;
+    align-items: center;
+    list-style: none;
 }
 #navbar ul li{
     float: left;
     text-align: center;
-
+    line-height: 0.8rem;
 }
 #navbar ul li a{
-    display: block;
-    text-align: center;
-    padding: 20px;
-    
+    padding: 0.75rem;
+    margin: 0 0.25rem;
+
 }
 #navbar ul li a:hover,
 #navbar ul li a.current {
@@ -78,7 +87,7 @@ background:white;
     padding: 16px;
     background: rgb(1, 209, 193);
     color: #f4f4f4;
-    font-size: 13px;
+    font-size: 0.8rem;
     position: fixed;
     left: 0px;
     bottom: 0px;
@@ -86,34 +95,34 @@ background:white;
 }
 .Major-Box{
     margin: auto;
-max-width: 1000px;
-height:465px;
+max-width: 90vw;
 position: relative;
-
+height: fit-content;
+display: flex;
+justify-items: auto;
 }
 .box{
 
-    width: 49%;
-    height: 460px;
-
+ flex: 1;
 
 }
-#box-1{
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-#box-2{
+/*#box-1{
     position: absolute;
     top: 0;
     right: 0;
 }
+#box-2{
+    position: absolute;
+    top: 0;
+    left: 0;
+}*/
 #Michi{
 
-    background: url("http://placekitten.com/1920/2878")no-repeat center center/cover;
-margin: 30px 70px;
+   background: url("http://placekitten.com/1920/2878")no-repeat center center/cover;
+
+margin: 1rem 5rem;
     width: 70%;
-    height: 400px;
+    height: 95%;
     border: 20px white solid;
     position: relative;
 }
@@ -144,15 +153,15 @@ bottom: 5%;
 }
 #main-fotos{
     width:100%;
-    height: 400px;
+    height: 22.5rem;
 
     position: relative;
 }
 #Main-Header{
-    font-size: 16px;
+    font-size: 14px;
     padding: 10px 10px;
     margin: auto;
-    margin-top: 15px;
+    margin-top: 1rem;
 }
 .foto{
     border: 20px white solid;
@@ -160,15 +169,15 @@ bottom: 5%;
 #foto-1{
     background: url("../img/Yunii/foto-1.jpg")no-repeat center center/cover;
     width: 45%;
-    height: 300px;
+    height: 14rem;
     position: absolute;
-    top: 60px;
+    top: 80px;
     left: 30px;
 }
 #foto-2{
     background: url("../img/Yunii/foto-2.jpg")no-repeat center center/cover;
     width: 55%;
-    height: 200px;
+    height: 11rem;
     position: absolute;
     bottom: -15px;
     right: 35px;
